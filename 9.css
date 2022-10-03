@@ -1,0 +1,351 @@
+/* Для всей страницы */
+*{
+
+    margin: auto;
+    padding: auto;
+ 
+
+}
+/* Для тела */
+body{
+  
+    overflow-x: hidden;
+            background-color:#34495e;
+            
+}
+
+/* Подключение шрифта */
+@font-face {
+font-family: 'Century Gothic'; 
+    src: url(/font/centurygothic.ttf); 
+}
+
+/* Для шапки */
+header{
+  text-align: center;
+    width: 1030px;
+ background-color: #2a3c4f;
+  height: auto;
+ box-shadow: 0 0 5px;
+ color: white;
+}
+.logo {
+width: 350px;
+height: 250px;
+}
+ul{
+list-style: none;
+font-size: 25px;
+font-family: Century Gothic;
+margin-left: 210px;
+}
+li {
+float: left;
+margin-right: 30px;
+text-align: center;
+}
+#header{
+    width: 1030px;
+
+}
+.top{
+height: 50px;
+width: 1030px;
+border: solid 0px white;
+}
+hr{
+    border: none; 
+    height: 2px;
+    color: white;
+    box-shadow: 0 0 5px;
+}
+
+
+/* Для ссылок */
+a:link{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: #FF0000;
+    text-decoration: underline;
+}
+a:visited{
+    color: white;
+}
+a:active{
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+/*Слайдер*/
+.wrapper {
+    height: 500px;
+    margin: 100px auto 0;
+    position: relative;
+    width: 1030px;
+   margin-top: 0px;
+   box-shadow: 0 0 5px;
+   color: white;
+}
+.slider {
+    background-color: #ddd;
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+    width: inherit;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    -o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+.wrapper > input {
+    display: none;
+}
+.slides {
+    height: inherit;
+    position: absolute;
+    width: inherit;
+    background-repeat: no-repeat;
+}
+.slide1 { background-image: url(slyder/1.jpg); }
+.slide2 { background-image: url(slyder/2.jpg); }
+.slide3 { background-image: url(slyder/3.jpg); }
+.slide4 { background-image: url(slyder/4.jpg); }
+.slide5 { background-image: url(slyder/5.png); }
+.wrapper .controls {
+    left: 50%;
+    margin-left: -98px;
+    position: absolute;
+}
+.wrapper label {
+    background-color: black;
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.wrapper label:after {
+    border: 2px solid #ddd;
+    content: " ";
+    display: block;
+    height: 12px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    width: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.wrapper label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: background ease-in-out .5s;
+    -moz-transition: background ease-in-out .5s;
+    -o-transition: background ease-in-out .5s;
+    transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5) {
+    background: #ddd;
+}
+.slides {
+    height: inherit;
+    opacity: 0;
+    position: absolute;
+    width: inherit;
+    z-index: 0;
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    -o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+    transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5 {
+    opacity: 1;
+    z-index: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+/* Для информационного блока */
+#block{
+width: 1030px;
+height: auto;
+}
+.info1{
+    margin-top: 305px;
+    width: 1030px; 
+}
+.kart1{
+    width: 550px;
+    height: 310px;
+    float: left;
+    margin-top: -345px;
+    margin-left: -45px;
+}
+.text1{
+  width: 450px;
+    font-family: Century Gothic;
+    font-size: 20px;
+    margin-top: -100px;   
+    float: left;
+    color: white;
+    height: 100px;
+}
+.info2{
+  margin-top: 305px;
+ width: 1030px;
+}
+.kart2{
+  width: 425px;
+  height: 200px;
+  margin-top: -290px;
+  float: right;
+}
+.text2{
+  width: 450px;
+  font-family: Century Gothic;
+  font-size: 20px;
+  margin-top: -100px;
+  float: right;
+  color: white;
+  height: 100px;
+}
+
+/* Для обратной связи */
+
+#fo{
+width: 1030px;
+height: auto;
+color: white;
+}
+
+
+.box {
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    margin-left: 515px;
+    transform: translate(-50%, -50%);
+    background: #191919;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 360px;
+    color: white;
+    box-shadow: 0 0 5px;
+}
+
+.box h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500px;
+}
+
+
+
+.but {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db; 
+    padding:  14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.50s; 
+}
+
+.but:focus {
+    width: 260px;
+    border-color: red;
+    color:white;
+}
+
+.button {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto; 
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 40px; 
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.5s;
+    cursor: pointer; 
+}
+
+.button:hover {
+    background: white;
+    color: black;
+}
+/* Для подвала */
+#fot{
+    width: 1030px;
+}
+footer{
+  width: 1030px;
+  height: 100px;
+  font-family: Century Gothic;
+  margin-top: 950px;
+  background-color: #2a3c4f;
+  box-shadow: 0 0 5px;
+  color: white;
+}
+.vk{
+    box-shadow: 0 0 8px;
+    color: white;
+    border-radius: 24px;
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 25px;
+
+}
+
+.svyaz{
+  
+    margin-left: 180px;
+    margin-top: -55px;
+    color: white;
+}
+.adres{
+    margin-left: 395px;
+    margin-top: -55px;
+    color: white;
+}
